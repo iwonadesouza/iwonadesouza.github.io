@@ -2641,7 +2641,7 @@ input, select, textarea {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 6.25em;
+			width: 8.25em;
 		}
 		
 	#topnav {
@@ -2685,7 +2685,19 @@ input, select, textarea {
 	.sticky + .content {
 		padding-top: 60px;
 	}
-		  
+	
+	#mobile-menu-btn {
+		display: none;
+	  }
+	  .mobile-menu {
+		color: white;
+		display: none;
+		position: absolute;
+		right: 0;
+		height: 60vh;
+		width: 70vw;
+		background-color: #ac7070;
+	  }
 		
 /* Footer */
 
@@ -3163,7 +3175,7 @@ input, select, textarea {
 /* Small */
 
 	@media screen and (max-width: 736px) {
-
+	
 		/* Basic */
 
 			h1 {
@@ -3236,11 +3248,22 @@ input, select, textarea {
 					margin-top: -1em;
 				}
 
-	}
-
 /* XSmall */
 
 	@media screen and (max-width: 480px) {
+		#mobile-menu-btn {
+			display: block;
+		  }
+		  nav p {
+			display: none;
+		  }
+		  .mobile-menu {
+			display: none;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+		  }
+		}
 
 		/* Header */
 
