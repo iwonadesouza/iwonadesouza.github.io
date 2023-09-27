@@ -2690,13 +2690,14 @@ input, select, textarea {
 		display: none;
 	  }
 	  .mobile-menu {
-		color: white;
-		display: none;
-		position: absolute;
-		right: 0;
-		height: 60vh;
-		width: 70vw;
+		float: left;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 10px 12px;
+		text-decoration: none;
+		font-size: 17px;
 		background-color: #ac7070;
+		z-index:1;
 	  }
 		
 /* Footer */
