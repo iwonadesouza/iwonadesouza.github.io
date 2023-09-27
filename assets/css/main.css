@@ -2592,17 +2592,16 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		background-color: #01455a;
-		background-attachment: absolute,								fixed;
-		background-image:  url("images/overlay.png"), url("../../images/bg.jpeg");
-		background-position: sticky,							sticky;
+		background-attachment: scroll,								scroll;
+		background-image: url("images/overlay.png"), url("../../images/bg.jpeg");
+		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								160%;
-		color:rgba(248, 248, 248, 0.5);
+		color:rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
 		padding: 8em 4em;
 		position: fixed;
-		overflow: hidden;
 		z-index:1;
 		text-align: right;
 		top: 0;
@@ -2618,10 +2617,10 @@ input, select, textarea {
 		}
 
 		#header > .inner {
-			-moz-flex-grow: 0;
-			-webkit-flex-grow: 0;
-			-ms-flex-grow: 0;
-			flex-grow: 0;
+			-moz-flex-grow: 1;
+			-webkit-flex-grow: 1;
+			-ms-flex-grow: 1;
+			flex-grow: 1;
 			margin: 0 0 2em 0;
 		}
 
@@ -2634,7 +2633,7 @@ input, select, textarea {
 		}
 
 		#header h1 {
-			color:  rgba(255, 255, 255, 0.5);
+			color: rgba(255, 255, 255, 0.5);
 			font-size: 4em;
 			line-height: 1.75em;
 			margin: 0;
@@ -2647,7 +2646,6 @@ input, select, textarea {
 		
 	#topnav {
 		z-index:1;
-		overflow: hidden;
 		background-color: #ac7070;
 	}
 		  
@@ -2729,15 +2727,15 @@ input, select, textarea {
 
 	#main {
 		margin-left: 35%;
-		max-width: 40em;
+		max-width: 54em;
 		padding: 8em 4em 4em 4em;
 		width: calc(100% - 35%);
 	}
 
 		#main > section {
 			border-top: solid 3px #efefef;
-			margin: 2em 0 0 0;
-			padding: 3em 0 0 0;
+			margin: 4em 0 0 0;
+			padding: 4em 0 0 0;
 		}
 
 			#main > section:first-child {
