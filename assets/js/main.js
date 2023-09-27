@@ -93,6 +93,21 @@
 
 			}
 
+			
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("topnav");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+  			if (window.scrollY >= sticky) {
+    			navbar.classList.add("sticky")
+  			} else {
+    			navbar.classList.remove("sticky");
+  			}
+		}
+
+
 	// Main Sections: Two.
 
 		// Lightbox gallery.
@@ -100,7 +115,7 @@
 
 				$('#two').poptrox({
 					caption: function($a) { return $a.next('h3').text(); },
-					overlayColor: '#2c2c2c',
+					overlayColor: '#d5eff7',
 					overlayOpacity: 0.85,
 					popupCloserText: '',
 					popupLoaderText: '',
