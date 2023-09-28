@@ -9,7 +9,7 @@
 	var $window = $(window),
 		$body = $('body'),
 		$header = $('#header'),
-		$titleBar = null,
+		$titleBar = $('#header'),
 		$nav = $('#nav'),
 		$wrapper = $('#wrapper');
 
